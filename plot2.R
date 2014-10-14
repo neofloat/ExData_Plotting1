@@ -10,7 +10,7 @@ datapw$DateTime <- strptime(paste(datapw$Date, datapw$Time),
                             "%d/%m/%Y  %H:%M:%S")
 
 # Create png device to write to. set White background and 480 x 480 in size.
-png("plot2.png", bg="white", width = 480, height =480)
+png("plot2.png", bg="transparant", width = 480, height =480)
 
 ## Draw the plot 2 in a png file
 plot(datapw$DateTime, datapw$Global_active_power, 
