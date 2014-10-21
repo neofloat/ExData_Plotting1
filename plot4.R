@@ -10,7 +10,7 @@ datapw$DateTime <- strptime(paste(datapw$Date, datapw$Time),
                             "%d/%m/%Y  %H:%M:%S")
 
 # Create png device to write to. set White background and 480 x 480 in size.
-png("plot4.png", bg="transparant", width=480,height=480)
+png("plot4.png", bg="transparent", width=480,height=480)
 #Multiple plot
 par(mfrow = c (2,2))
 #Graphic top left

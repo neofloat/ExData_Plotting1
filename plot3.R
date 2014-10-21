@@ -11,7 +11,7 @@ datapw$DateTime <- strptime(paste(datapw$Date, datapw$Time),
 
 # Create png device to write to. set White background and 480 x 480 in size.
 
-png("plot3.png", bg="transparant", width = 480, height =480)
+png("plot3.png", bg="transparent", width = 480, height =480)
 par(mar = c(3,4,2,1))
 plot(datapw$DateTime,datapw$Sub_metering_1,ylab="Energy sub metering",type="n")
 with(datapw, lines(DateTime, Sub_metering_1, col = "black"))

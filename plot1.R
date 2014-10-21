@@ -10,7 +10,7 @@ datapw$DateTime <- strptime(paste(datapw$Date, datapw$Time),
                             "%d/%m/%Y  %H:%M:%S")
 
 # Create png device to write histogram to. set White background and 480 x 480 in size.
-png("plot1.png", bg="transparant", width = 480, height =480)
+png("plot1.png", bg="transparent", width = 480, height =480)
 
 ## Draw the histogram of plot 1 in a png file
 hist(datapw$Global_active_power, main="Global Active Power",
